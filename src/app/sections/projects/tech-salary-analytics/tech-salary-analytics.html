@@ -1,0 +1,383 @@
+<main class="project-detail salary-project">
+
+  <!-- Navigation -->
+  <div class="top-nav">
+    <a class="btn btn-ghost" [routerLink]="['/']" fragment="projects">
+      <span aria-hidden="true">←</span>
+      {{ 'SALARY.NAV_BACK' | translate }}
+    </a>
+  </div>
+
+  <!-- HERO / COUVERTURE -->
+  <section class="project-hero">
+    <div class="project-hero-content">
+
+
+      <p class="project-category">
+        {{ 'SALARY.CATEGORY' | translate }}
+      </p>
+
+      <h1>{{ 'SALARY.HERO.TITLE' | translate }}</h1>
+
+      <p class="project-intro">
+        {{ 'SALARY.HERO.INTRO' | translate }}
+      </p>
+
+      <div class="project-tech-tags">
+        <span>SQL Server</span>
+        <span>SSIS</span>
+        <span>Data Warehouse</span>
+        <span>SSAS / OLAP</span>
+        <span>Power BI</span>
+      </div>
+
+      
+
+    </div>
+
+    <div class="project-hero-visual">
+      <img
+        src="/Tech%20Salary%20Analytics/cover.png"
+        [alt]="'SALARY.HERO.COVER_ALT' | translate"
+        fetchpriority="high"
+      />
+    </div>
+  </section>
+
+
+  <!-- APERÇU DU PROJET -->
+  <section class="project-overview" id="project-overview">
+
+    <div class="section-heading">
+      <p class="section-eyebrow">{{ 'SALARY.OVERVIEW.LABEL' | translate }}</p>
+      <h2>{{ 'SALARY.OVERVIEW.TITLE' | translate }}</h2>
+      <p>
+        {{ 'SALARY.OVERVIEW.INTRO' | translate }}
+      </p>
+    </div>
+
+    <div class="overview-grid">
+
+      <article class="overview-card">
+        <span class="overview-number">01</span>
+        <h3>{{ 'SALARY.OVERVIEW.ETL_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.OVERVIEW.ETL_TEXT' | translate }}
+        </p>
+      </article>
+
+      <article class="overview-card">
+        <span class="overview-number">02</span>
+        <h3>{{ 'SALARY.OVERVIEW.MODEL_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.OVERVIEW.MODEL_TEXT' | translate }}
+        </p>
+      </article>
+
+      <article class="overview-card">
+        <span class="overview-number">03</span>
+        <h3>{{ 'SALARY.OVERVIEW.OLAP_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.OVERVIEW.OLAP_TEXT' | translate }}
+        </p>
+      </article>
+
+      <article class="overview-card">
+        <span class="overview-number">04</span>
+        <h3>{{ 'SALARY.OVERVIEW.DASHBOARD_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.OVERVIEW.DASHBOARD_TEXT' | translate }}
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ÉTAPE 1 : ETL -->
+  <section class="project-step project-process">
+
+    <div class="step-text">
+      <p class="section-eyebrow">{{ 'SALARY.ETL.LABEL' | translate }}</p>
+      <h2>{{ 'SALARY.ETL.TITLE' | translate }}</h2>
+      <p>
+        {{ 'SALARY.ETL.INTRO' | translate }}
+      </p>
+      <ul class="step-points">
+        <li>{{ 'SALARY.ETL.POINT1' | translate }}</li>
+        <li>{{ 'SALARY.ETL.POINT2' | translate }}</li>
+      </ul>
+      <span class="step-tool">SSIS</span>
+    </div>
+
+    <figure class="project-image-card">
+      <input type="checkbox" id="zoom-etl" class="zoom-toggle" />
+      <label for="zoom-etl" class="zoom-frame">
+        <img
+          src="/Tech%20Salary%20Analytics/Sch%C3%A9ma%20de%20flux%20ETL%20r%C3%A9ussi.png"
+          [alt]="'SALARY.ETL.ALT' | translate"
+          loading="lazy"
+        />
+      </label>
+      <figcaption>
+        <span class="figure-number">FIGURE 01</span>
+        {{ 'SALARY.ETL.CAPTION' | translate }}
+      </figcaption>
+    </figure>
+
+  </section>
+
+
+  <!-- ÉTAPE 2 : DATA WAREHOUSE -->
+  <section class="project-step project-model">
+
+    <div class="step-text">
+      <p class="section-eyebrow">{{ 'SALARY.MODEL.LABEL' | translate }}</p>
+      <h2>{{ 'SALARY.MODEL.TITLE' | translate }}</h2>
+      <p>
+        {{ 'SALARY.MODEL.INTRO' | translate }}
+      </p>
+      <ul class="step-points">
+        <li>{{ 'SALARY.MODEL.POINT1' | translate }}</li>
+        <li>{{ 'SALARY.MODEL.POINT2' | translate }}</li>
+      </ul>
+      <span class="step-tool">Data Warehouse</span>
+    </div>
+
+    <figure class="project-image-card">
+      <input type="checkbox" id="zoom-dw" class="zoom-toggle" />
+      <label for="zoom-dw" class="zoom-frame">
+        <img
+          src="/Tech%20Salary%20Analytics/Sch%C3%A9ma%20en%20%C3%A9toile%20des%20salaires.png"
+          [alt]="'SALARY.MODEL.ALT' | translate"
+          loading="lazy"
+        />
+      </label>
+      <figcaption>
+        <span class="figure-number">FIGURE 02</span>
+        {{ 'SALARY.MODEL.CAPTION' | translate }}
+      </figcaption>
+    </figure>
+
+  </section>
+
+
+  <!-- ÉTAPE 3 : OLAP / MDX -->
+  <section class="project-step project-olap">
+
+    <div class="step-text">
+      <p class="section-eyebrow">{{ 'SALARY.OLAP.LABEL' | translate }}</p>
+      <h2>{{ 'SALARY.OLAP.TITLE' | translate }}</h2>
+      <p>
+        {{ 'SALARY.OLAP.INTRO' | translate }}
+      </p>
+      <ul class="step-points">
+        <li>{{ 'SALARY.OLAP.POINT1' | translate }}</li>
+        <li>{{ 'SALARY.OLAP.POINT2' | translate }}</li>
+      </ul>
+      <span class="step-tool">SSAS / MDX</span>
+    </div>
+
+    <figure class="project-image-card">
+      <input type="checkbox" id="zoom-olap" class="zoom-toggle" />
+      <label for="zoom-olap" class="zoom-frame">
+        <img
+          src="/Tech%20Salary%20Analytics/Interface%20MDX%20avec%20tableau%20de%20r%C3%A9sultats.png"
+          [alt]="'SALARY.OLAP.ALT' | translate"
+          loading="lazy"
+        />
+      </label>
+      <figcaption>
+        <span class="figure-number">FIGURE 03</span>
+        {{ 'SALARY.OLAP.CAPTION' | translate }}
+      </figcaption>
+    </figure>
+
+  </section>
+
+
+  <!-- DASHBOARD POWER BI -->
+  <section class="project-dashboard">
+
+    <div class="section-heading">
+      <p class="section-eyebrow">{{ 'SALARY.DASHBOARD.LABEL' | translate }}</p>
+      <h2>{{ 'SALARY.DASHBOARD.TITLE' | translate }}</h2>
+      <p>
+        {{ 'SALARY.DASHBOARD.INTRO' | translate }}
+      </p>
+    </div>
+
+    <figure class="project-dashboard-image">
+      <input type="checkbox" id="zoom-dash" class="zoom-toggle" />
+      <label for="zoom-dash" class="zoom-frame">
+        <img
+          src="/Tech%20Salary%20Analytics/Tableau%20de%20bord%20des%20salaires%20tech.png"
+          [alt]="'SALARY.DASHBOARD.ALT' | translate"
+          loading="lazy"
+        />
+      </label>
+      <figcaption>
+        {{ 'SALARY.DASHBOARD.CAPTION' | translate }}
+      </figcaption>
+    </figure>
+
+    <div class="dashboard-insights">
+
+      <article class="insight-card">
+        <span class="insight-icon" aria-hidden="true">↗</span>
+        <h3>{{ 'SALARY.DASHBOARD.INSIGHT1_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.DASHBOARD.INSIGHT1_TEXT' | translate }}
+        </p>
+      </article>
+
+      <article class="insight-card">
+        <span class="insight-icon" aria-hidden="true">▥</span>
+        <h3>{{ 'SALARY.DASHBOARD.INSIGHT2_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.DASHBOARD.INSIGHT2_TEXT' | translate }}
+        </p>
+      </article>
+
+      <article class="insight-card">
+        <span class="insight-icon" aria-hidden="true">⌖</span>
+        <h3>{{ 'SALARY.DASHBOARD.INSIGHT3_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.DASHBOARD.INSIGHT3_TEXT' | translate }}
+        </p>
+      </article>
+
+      <article class="insight-card">
+        <span class="insight-icon" aria-hidden="true">★</span>
+        <h3>{{ 'SALARY.DASHBOARD.INSIGHT4_TITLE' | translate }}</h3>
+        <p>
+          {{ 'SALARY.DASHBOARD.INSIGHT4_TEXT' | translate }}
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- TECHNOLOGIES -->
+  <section class="project-stack">
+
+    <div class="section-heading">
+      <p class="section-eyebrow">{{ 'SALARY.STACK.LABEL' | translate }}</p>
+      <h2>{{ 'SALARY.STACK.TITLE' | translate }}</h2>
+    </div>
+
+    <div class="stack-grid">
+
+      <div class="stack-item">
+        <span class="stack-symbol">SQL</span>
+        <div>
+          <h3>SQL Server</h3>
+          <p>{{ 'SALARY.STACK.SQL_TEXT' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-symbol">ETL</span>
+        <div>
+          <h3>SSIS</h3>
+          <p>{{ 'SALARY.STACK.SSIS_TEXT' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-symbol">DW</span>
+        <div>
+          <h3>Data Warehouse</h3>
+          <p>{{ 'SALARY.STACK.DW_TEXT' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-symbol">OLAP</span>
+        <div>
+          <h3>SSAS / MDX</h3>
+          <p>{{ 'SALARY.STACK.OLAP_TEXT' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-symbol">BI</span>
+        <div>
+          <h3>Power BI</h3>
+          <p>{{ 'SALARY.STACK.BI_TEXT' | translate }}</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- VALEUR AJOUTÉE -->
+  <section class="project-value">
+
+    <div class="value-intro">
+      <p class="section-eyebrow">{{ 'SALARY.VALUE.LABEL' | translate }}</p>
+      <h2>{{ 'SALARY.VALUE.TITLE' | translate }}</h2>
+      <p class="value-text">
+        {{ 'SALARY.VALUE.INTRO' | translate }}
+      </p>
+    </div>
+
+    <div class="value-grid">
+
+      <article class="value-card">
+        <h3>{{ 'SALARY.VALUE.CHALLENGES_TITLE' | translate }}</h3>
+        <ul>
+          <li>{{ 'SALARY.VALUE.CHALLENGE1' | translate }}</li>
+          <li>{{ 'SALARY.VALUE.CHALLENGE2' | translate }}</li>
+          <li>{{ 'SALARY.VALUE.CHALLENGE3' | translate }}</li>
+        </ul>
+      </article>
+
+      <article class="value-card">
+        <h3>{{ 'SALARY.VALUE.SKILLS_TITLE' | translate }}</h3>
+        <ul>
+          <li>{{ 'SALARY.VALUE.SKILL1' | translate }}</li>
+          <li>{{ 'SALARY.VALUE.SKILL2' | translate }}</li>
+          <li>{{ 'SALARY.VALUE.SKILL3' | translate }}</li>
+          <li>{{ 'SALARY.VALUE.SKILL4' | translate }}</li>
+        </ul>
+      </article>
+
+      <article class="value-card">
+        <h3>{{ 'SALARY.VALUE.FUTURE_TITLE' | translate }}</h3>
+        <ul>
+          <li>{{ 'SALARY.VALUE.FUTURE1' | translate }}</li>
+          <li>{{ 'SALARY.VALUE.FUTURE2' | translate }}</li>
+          <li>{{ 'SALARY.VALUE.FUTURE3' | translate }}</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <p class="value-note">
+      {{ 'SALARY.VALUE.NOTE' | translate }}
+    </p>
+
+  </section>
+
+
+  <!-- CONTACT / RETOUR -->
+  <section class="project-cta">
+    <div>
+      <h2>{{ 'SALARY.CTA.TITLE' | translate }}</h2>
+      <p>
+        {{ 'SALARY.CTA.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="cta-actions">
+      <a class="btn btn-ghost on-dark" [routerLink]="['/']" fragment="projects">
+        <span aria-hidden="true">←</span>
+        {{ 'SALARY.CTA.ALL_PROJECTS' | translate }}
+      </a>
+    </div>
+  </section>
+
+</main>

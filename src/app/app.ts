@@ -1,12 +1,30 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Parcours } from './sections/parcours/parcours';
+import { Hero } from './sections/hero/hero';
+import { Projects } from './sections/projects/projects';
 import { RouterOutlet } from '@angular/router';
+import { Experience } from './sections/experience/experience';
+import { Distinction } from './sections/distinction/distinction';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports: [
+    RouterOutlet,
+    
+  ],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('emna-portfolio');
+  private translate = inject(TranslateService);
+
+  isEnglish = false;
+
+  toggleLanguage(): void {
+    this.isEnglish = !this.isEnglish;
+
+    this.translate.use(this.isEnglish ? 'en' : 'fr');
+  }
 }

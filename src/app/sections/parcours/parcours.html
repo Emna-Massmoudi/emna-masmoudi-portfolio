@@ -1,0 +1,58 @@
+<section id="journey" class="journey">
+  <p class="eyebrow">{{ 'JOURNEY.LABEL' | translate }}</p>
+
+  <h2>
+    {{ 'JOURNEY.TITLE' | translate }}
+    <span>{{ 'JOURNEY.SUBTITLE' | translate }}</span>
+  </h2>
+
+  <ol class="timeline">
+
+    <li class="timeline-item">
+      <span class="timeline-marker" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      </span>
+      <div class="timeline-card">
+        <div class="timeline-meta">
+          <p class="timeline-date">{{ 'JOURNEY.BAC.DATE' | translate }}</p>
+        </div>
+        <h3>{{ 'JOURNEY.BAC.TITLE' | translate }}</h3>
+        <p class="timeline-field">{{ 'JOURNEY.BAC.FIELD' | translate }}</p>
+        <p class="timeline-text">{{ 'JOURNEY.BAC.TEXT' | translate }}</p>
+      </div>
+    </li>
+
+    <li class="timeline-item">
+      <span class="timeline-marker" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </span>
+      <div class="timeline-card">
+        <div class="timeline-meta">
+          <p class="timeline-date">{{ 'JOURNEY.LICENCE.DATE' | translate }}</p>
+        </div>
+        <h3>{{ 'JOURNEY.LICENCE.TITLE' | translate }}</h3>
+        <p class="timeline-field">{{ 'JOURNEY.LICENCE.FIELD' | translate }}</p>
+        <p class="timeline-text">{{ 'JOURNEY.LICENCE.TEXT' | translate }}</p>
+      </div>
+    </li>
+
+    <li class="timeline-item is-current">
+      <span class="timeline-marker" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      </span>
+      <div class="timeline-card">
+        <div class="timeline-meta">
+          <p class="timeline-date">{{ 'JOURNEY.ENGINEER.DATE' | translate }}</p>
+          <span class="timeline-status">
+            <span class="availability-dot" aria-hidden="true"></span>
+            {{ 'JOURNEY.CURRENT' | translate }}
+          </span>
+        </div>
+        <h3>{{ 'JOURNEY.ENGINEER.TITLE' | translate }}</h3>
+        <p class="timeline-field">{{ 'JOURNEY.ENGINEER.FIELD' | translate }}</p>
+        <p class="timeline-text">{{ 'JOURNEY.ENGINEER.TEXT' | translate }}</p>
+      </div>
+    </li>
+
+  </ol>
+</section>

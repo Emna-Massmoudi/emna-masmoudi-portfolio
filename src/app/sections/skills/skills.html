@@ -1,0 +1,114 @@
+<section id="skills" class="skills-section">
+
+  <!-- En-tête -->
+  <div class="skills-header">
+    <div class="skills-intro">
+      <h2>
+        {{ 'SKILLSET.TITLE' | translate }}
+        <span>{{ 'SKILLSET.SUBTITLE' | translate }}</span>
+      </h2>
+      <p class="skills-description">{{ 'SKILLSET.DESCRIPTION' | translate }}</p>
+    </div>
+
+    <ul class="skills-summary">
+      <li>
+        <strong>{{ domainCount }}</strong>
+        <span>{{ 'SKILLSET.STAT_DOMAINS' | translate }}</span>
+      </li>
+      <li>
+        <strong>{{ skillCount }}</strong>
+        <span>{{ 'SKILLSET.STAT_TECH' | translate }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Spécialité mise en avant -->
+  <article class="skill-featured">
+    <div class="skill-featured-text">
+      <span class="skill-badge">{{ 'SKILLSET.FEATURED_LABEL' | translate }}</span>
+      <h3>
+        <span class="skill-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect x="4" y="4" width="16" height="16" rx="2"/>
+            <rect x="9" y="9" width="6" height="6"/>
+            <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/>
+          </svg>
+        </span>
+        {{ 'SKILLSET.CATEGORIES.' + featured.key | translate }}
+      </h3>
+      <p>{{ 'SKILLSET.FEATURED_TEXT' | translate }}</p>
+    </div>
+
+    <ul class="skill-list skill-list-large">
+      @for (s of featured.skills; track s.name) {
+        <li class="skill-chip">
+          <span class="skill-symbol" aria-hidden="true">{{ s.symbol }}</span>
+          {{ s.name }}
+        </li>
+      }
+    </ul>
+  </article>
+
+  <!-- Autres catégories -->
+  <div class="skills-grid">
+    @for (cat of categories; track cat.key) {
+      <article class="skill-card" [class.wide]="cat.wide">
+
+        <div class="skill-card-head">
+          <span class="skill-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              @switch (cat.key) {
+                @case ('CODE') {
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                }
+                @case ('FRAMEWORKS') {
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                }
+                @case ('DATABASES') {
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M3 5v14a9 3 0 0 0 18 0V5"/>
+                  <path d="M3 12a9 3 0 0 0 18 0"/>
+                }
+                @case ('TOOLS') {
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                }
+                @default {
+                  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                  <path d="M21 3v5h-5"/>
+                  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                  <path d="M8 16H3v5"/>
+                }
+              }
+            </svg>
+          </span>
+          <h3>{{ 'SKILLSET.CATEGORIES.' + cat.key | translate }}</h3>
+          <span class="skill-count" aria-hidden="true">{{ cat.skills.length }}</span>
+        </div>
+
+        <ul class="skill-list">
+          @for (s of cat.skills; track s.name) {
+            <li class="skill-chip">
+              <span class="skill-symbol" aria-hidden="true">{{ s.symbol }}</span>
+              {{ s.name }}
+            </li>
+          }
+        </ul>
+
+      </article>
+    }
+  </div>
+
+  <!-- Langues -->
+  <div class="skills-spoken">
+    <h3>{{ 'SKILLSET.SPOKEN_TITLE' | translate }}</h3>
+    <ul>
+      <li>{{ 'SKILLSET.SPOKEN.AR' | translate }}</li>
+      <li>{{ 'SKILLSET.SPOKEN.FR' | translate }}</li>
+      <li>{{ 'SKILLSET.SPOKEN.EN' | translate }}</li>
+    </ul>
+  </div>
+
+</section>

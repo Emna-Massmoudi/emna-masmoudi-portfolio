@@ -1,0 +1,408 @@
+
+<section class="project-detail datamining-detail">
+
+  <!-- Navigation -->
+ <nav class="top-nav">
+  <a class="back-link" [routerLink]="['/']" fragment="projects">
+    <span aria-hidden="true">←</span>
+    {{ 'sinistre.nav.back' | translate }}
+  </a>
+</nav>
+
+<header class="project-hero">
+  <div class="hero-content">
+    <p class="project-category">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      {{ 'sinistre.hero.category' | translate }}
+    </p>
+
+    <h1>{{ 'sinistre.hero.title' | translate }}</h1>
+
+    <p class="project-intro">
+      {{ 'sinistre.hero.intro' | translate }}
+    </p>
+
+    
+
+    <ul class="hero-facts">
+      <li>
+        <strong>5 014</strong>
+        <span>{{ 'sinistre.hero.train' | translate }}</span>
+      </li>
+      <li>
+        <strong>2 147</strong>
+        <span>{{ 'sinistre.hero.test' | translate }}</span>
+      </li>
+      <li>
+        <strong>0,71</strong>
+        <span>{{ 'sinistre.hero.f1' | translate }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="hero-cover">
+    <img
+      src="/Sinistre/cover.png"
+      [alt]="'sinistre.hero.coverAlt' | translate"
+    />
+  </div>
+</header>
+
+  <!-- CONTEXTE -->
+  <section class="project-context">
+    <div class="section-heading">
+      <p class="project-category">{{ "sinistre.context.label" | translate }}</p>
+      <h2>{{ "sinistre.context.title" | translate }}</h2>
+      <p>
+        {{ "sinistre.context.description" | translate }}
+      </p>
+    </div>
+
+    <div class="context-grid">
+      <article class="context-card">
+        <span class="context-num">01</span>
+        <h3>{{ "sinistre.context.problem.title" | translate }}</h3>
+        <p>
+          {{ "sinistre.context.problem.text" | translate }}
+        </p>
+      </article>
+
+      <article class="context-card">
+        <span class="context-num">02</span>
+        <h3>{{ "sinistre.context.objective.title" | translate }}</h3>
+        <p>
+          {{ "sinistre.context.objective.text" | translate }}
+        </p>
+      </article>
+
+      <article class="context-card">
+        <span class="context-num">03</span>
+        <h3>{{ "sinistre.context.approach.title" | translate }}</h3>
+        <p>
+          {{ "sinistre.context.approach.text" | translate }}
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section class="project-method">
+    <div class="section-heading center">
+      <p class="project-category">{{ "sinistre.method.label" | translate }}</p>
+      <h2>{{ "sinistre.method.title" | translate }}</h2>
+      <p>
+        {{ "sinistre.method.description" | translate }}
+      </p>
+    </div>
+
+    <ol class="pipeline">
+      <li>
+        <span>01</span>
+        <strong>{{ "sinistre.method.step1" | translate }}</strong>
+        <small>{{ "sinistre.method.step1small" | translate }}</small>
+      </li>
+      <li>
+        <span>02</span>
+        <strong>{{ "sinistre.method.step2" | translate }}</strong>
+        <small>{{ "sinistre.method.step2small" | translate }}</small>
+      </li>
+      <li>
+        <span>03</span>
+        <strong>{{ "sinistre.method.step3" | translate }}</strong>
+        <small>{{ "sinistre.method.step3small" | translate }}</small>
+      </li>
+      <li>
+        <span>04</span>
+        <strong>{{ "sinistre.method.step4" | translate }}</strong>
+        <small>{{ "sinistre.method.step4small" | translate }}</small>
+      </li>
+      <li>
+        <span>05</span>
+        <strong>{{ "sinistre.method.step5" | translate }}</strong>
+        <small>{{ "sinistre.method.step5small" | translate }}</small>
+      </li>
+    </ol>
+  </section>
+
+  <!-- EXPLORATION ET PRÉTRAITEMENT -->
+  <section class="project-gallery">
+    <div class="section-heading">
+      <p class="project-category">{{ "sinistre.exploration.label" | translate }}</p>
+      <h2>{{ "sinistre.exploration.title" | translate }}</h2>
+      <p>
+        {{ "sinistre.exploration.description" | translate }}
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/Distribution et transformation logarithmique de area_m2.png"
+          [alt]="'sinistre.exploration.alt1' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.exploration.fig1.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.exploration.fig1.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/Distribution de Geo_Code.png"
+          [alt]="'sinistre.exploration.alt2' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.exploration.fig2.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.exploration.fig2.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/Grille d’histogrammes avec sélections rouges.png"
+          [alt]="'sinistre.exploration.alt3' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.exploration.fig3.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.exploration.fig3.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/correlation-matrix.png"
+          [alt]="'sinistre.exploration.alt4' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.exploration.fig4.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.exploration.fig4.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- DÉFIS -->
+  <section class="project-features">
+    <div class="section-heading center">
+      <p class="project-category">{{ "sinistre.features.label" | translate }}</p>
+      <h2>{{ "sinistre.features.title" | translate }}</h2>
+    </div>
+
+    <div class="features-grid four">
+
+      <article class="feature-card">
+        <span class="feature-icon">01</span>
+        <h3>{{ "sinistre.features.missing.title" | translate }}</h3>
+        <p>
+          {{ "sinistre.features.missing.text" | translate }}
+        </p>
+        <p class="tech-why">
+          {{ "sinistre.features.missing.solution" | translate }}
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">02</span>
+        <h3>{{ "sinistre.features.complex.title" | translate }}</h3>
+        <p>
+          {{ "sinistre.features.complex.text" | translate }}
+        </p>
+        <p class="tech-why">
+          {{ "sinistre.features.complex.solution" | translate }}
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">03</span>
+        <h3>{{ "sinistre.features.outliers.title" | translate }}</h3>
+        <p>
+          {{ "sinistre.features.outliers.text" | translate }}
+        </p>
+        <p class="tech-why">
+          {{ "sinistre.features.outliers.solution" | translate }}
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">04</span>
+        <h3>{{ "sinistre.features.imbalance.title" | translate }}</h3>
+        <p>
+          {{ "sinistre.features.imbalance.text" | translate }}
+        </p>
+        <p class="tech-why">
+          {{ "sinistre.features.imbalance.solution" | translate }}
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- MODÈLES -->
+  <section class="project-results">
+    <div class="section-heading center">
+      <p class="project-category">{{ "sinistre.models.label" | translate }}</p>
+      <h2>{{ "sinistre.models.title" | translate }}</h2>
+      <p>
+        {{ "sinistre.models.description" | translate }}
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/Comparaison des performances modèles.png"
+          [alt]="'sinistre.models.compare.alt' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.models.compare.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.models.compare.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/Importance des variables _ XGBoost et forêt aléatoire.png"
+          [alt]="'sinistre.models.importance.alt' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.models.importance.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.models.importance.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ÉVALUATION -->
+  <section class="project-gallery">
+    <div class="section-heading">
+      <p class="project-category">{{ "sinistre.evaluation.label" | translate }}</p>
+      <h2>{{ "sinistre.evaluation.title" | translate }}</h2>
+      <p>
+        {{ "sinistre.evaluation.description" | translate }}
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/Comparaison des métriques XGBoost Train-Test.png"
+          [alt]="'sinistre.evaluation.metrics.alt' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.evaluation.metrics.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.evaluation.metrics.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img
+          src="/Sinistre/Courbe d’apprentissage XGBoost colorée.png"
+          [alt]="'sinistre.evaluation.learning.alt' | translate"
+          loading="lazy"
+        />
+        <figcaption>
+          <strong>{{ "sinistre.evaluation.learning.title" | translate }}</strong>
+          <p>
+            {{ "sinistre.evaluation.learning.text" | translate }}
+          </p>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <div class="results-note">
+      <strong>{{ "sinistre.evaluation.noteTitle" | translate }}</strong>
+      {{ "sinistre.evaluation.note" | translate }}
+    </div>
+  </section>
+
+  <!-- BILAN -->
+  <section class="project-conclusion">
+    <div class="conclusion-intro">
+      <p class="project-category">{{ "sinistre.conclusion.label" | translate }}</p>
+      <h2>{{ "sinistre.conclusion.title" | translate }}</h2>
+      <p>
+        {{ "sinistre.conclusion.description" | translate }}
+      </p>
+    </div>
+
+    <div class="conclusion-grid">
+
+      <article class="conclusion-card">
+        <h3>{{ "sinistre.conclusion.skills.title" | translate }}</h3>
+        <ul>
+          <li>{{ "sinistre.conclusion.skill1" | translate }}</li>
+          <li>{{ "sinistre.conclusion.skill2" | translate }}</li>
+          <li>{{ "sinistre.conclusion.skill3" | translate }}</li>
+          <li>{{ "sinistre.conclusion.skill4" | translate }}</li>
+        </ul>
+      </article>
+
+      <article class="conclusion-card">
+        <h3>{{ "sinistre.conclusion.models.title" | translate }}</h3>
+        <ul>
+          <li>{{ "sinistre.conclusion.model1" | translate }}</li>
+          <li>{{ "sinistre.conclusion.model2" | translate }}</li>
+          <li>{{ "sinistre.conclusion.model3" | translate }}</li>
+          <li>{{ "sinistre.conclusion.model4" | translate }}</li>
+        </ul>
+      </article>
+
+      <article class="conclusion-card">
+        <h3>{{ "sinistre.conclusion.future.title" | translate }}</h3>
+        <ul>
+          <li>{{ "sinistre.conclusion.future1" | translate }}</li>
+          <li>{{ "sinistre.conclusion.future2" | translate }}</li>
+          <li>{{ "sinistre.conclusion.future3" | translate }}</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="project-footer">
+  <div>
+    <h2>{{ 'sinistre.footer.title' | translate }}</h2>
+    <p>{{ 'sinistre.footer.description' | translate }}</p>
+  </div>
+
+  <div class="footer-actions">
+    <a
+      class="back-link on-dark"
+      [routerLink]="['/']"
+      fragment="projects"
+    >
+      <span aria-hidden="true">←</span>
+      {{ 'sinistre.footer.all' | translate }}
+    </a>
+  </div>
+</footer>
+
+</section>

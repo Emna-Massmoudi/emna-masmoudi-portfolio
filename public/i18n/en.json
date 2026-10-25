@@ -1,0 +1,701 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "JOURNEY": "Journey",
+    "PROJECTS": "Projects",
+    "EXPERIENCE": "Experience",
+    "SKILLS": "Skills",
+    "CONTACT": "Contact",
+    "DOWNLOAD_CV": "Download my CV"
+  },
+  "HERO": {
+    "AVAILABLE": "Looking for a Final-Year Internship starting February 2027",
+    "GREETING": "HELLO, I'M",
+    "ROLE": "Computer Engineering Student",
+    "ROLE_2": "Passionate about AI and data",
+    "ROLE_3": "Web and mobile developer",
+"DESCRIPTION": "A third-year computer engineering student at the International Institute of Technology (IIT) in Sfax. Curious, ambitious, and always eager to learn, I bring my ideas to life through real-world projects, seeing every challenge as an opportunity to grow.",        
+    "DISCOVER": "Discover my projects",
+    "CONTACT_ME": "Contact me",
+    "CONNECT": "Contact me",
+    "VIEW_CV": "View my CV",
+"CV_URL": "/CV/Resume-Emna Masmoudi.pdf"
+  },
+  "SKILLS": {
+    "LABEL": "Open to every IT field",
+    "WEB": "Web development",
+    "MOBILE": "Mobile apps",
+    "AI": "Artificial intelligence",
+    "DATA": "Data",
+    "CLOUD": "Cloud and DevOps"
+  },
+  "PROJECTS": {
+    "LABEL": "PORTFOLIO",
+    "TITLE": "My",
+    "SUBTITLE": "projects",
+    "DESCRIPTION": "A selection of my projects in mobile, web and artificial intelligence development.",
+    "VIEW_PROJECT": "View project"
+  },
+  "CONTACT": {
+    "LABEL": "Contact",
+    "TITLE": "An opportunity?",
+    "SUBTITLE": "Let's talk.",
+    "DESCRIPTION": "Currently looking for a final-year (PFE) internship in computer engineering, I am open to opportunities that will allow me to contribute to innovative projects in software development and artificial intelligence.",
+    "THANKS": "Thank you for visiting."
+  },
+  "JOURNEY": {
+    "LABEL": "BACKGROUND",
+    "TITLE": "My academic",
+    "SUBTITLE": "journey",
+    "CURRENT": "In progress",
+    "BAC": {
+      "DATE": "2021",
+      "TITLE": "Baccalaureate",
+      "FIELD": "Experimental Sciences",
+      "TEXT": "Baccalaureate in experimental sciences."
+    },
+    "LICENCE": {
+      "DATE": "2021 – 2024",
+      "TITLE": "Bachelor's degree",
+      "FIELD": "Computer Science",
+      "TEXT": "Higher Institute of Computer Science and Multimedia of Sfax (ISIMS)."
+    },
+    "ENGINEER": {
+      "DATE": "Since 2024",
+      "TITLE": "Engineering cycle",
+      "FIELD": "Computer Engineering",
+      "TEXT": "International Institute of Technology (IIT), Sfax."
+    }
+  },
+
+"MEDSCAN": {
+  "CATEGORY": "Artificial Intelligence · Digital Health",
+  "BACK_PROJECTS": "Back to projects",
+  "HERO": {
+    "EYEBROW": "Case study · Mobile & AI",
+    "TAGLINE": "Scan, understand, with privacy in mind.",
+    "INTRO": "A mobile application combining computer vision and language models to help users identify medications and understand prescriptions.",
+    "FACT1": "one codebase",
+    "LOCAL_AI": "On-device AI",
+    "FACT2": "health data privacy",
+    "OCR": "On-device OCR",
+    "COVER_ALT": "MedScan AI visual overview"
+  },
+  "CONTEXT": {
+    "EYEBROW": "Why this project",
+    "TITLE": "Making medical information easier to understand",
+    "CARD1_TITLE": "The challenge",
+    "CARD1_TEXT": "Handwritten prescriptions can be difficult to read, while medication packaging contains a lot of technical information.",
+    "CARD2_TITLE": "The idea",
+    "CARD2_TEXT": "One application to scan medication packaging, analyze prescriptions, and ask questions to an assistant.",
+    "CARD3_TITLE": "The approach",
+    "CARD3_TEXT": "Privacy first: text is extracted on the device, and the language model runs locally."
+  },
+  "FEATURES": {
+    "EYEBROW": "The app, screen by screen",
+    "TITLE": "Key features",
+    "DESCRIPTION": "Each screen is designed to provide a smooth and intuitive experience.",
+    "STEP": "Step",
+    "HOME_ALT": "MedScan AI home screen",
+    "HOME_TITLE": "A centralized health hub",
+"HOME_TEXT": "The home screen gives one-tap access to every feature: health chatbot, eye scanner, prescription analysis, medication recognition and nearby open pharmacies.",    "MEDICINE_ALT": "Medication scanning screen",
+    "MEDICINE_TITLE": "Smart medication recognition",
+    "MEDICINE_TEXT": "Users scan a medication package. The application extracts the name and active ingredient, then displays the associated health information.",
+    "PRESCRIPTION_ALT": "Prescription analysis screen",
+    "PRESCRIPTION_TITLE": "Prescription analysis (OCR)",
+    "PRESCRIPTION_TEXT": "The application scans the medical document, extracts text using OCR, and organizes it clearly to make the treatment easier to understand.",
+    "ASSISTANT_ALT": "Conversational medical assistant",
+    "ASSISTANT_TITLE": "Conversational AI assistant",
+    "ASSISTANT_TEXT": "A chatbot answers questions in natural language. It uses a locally running language model to provide contextual responses while helping protect data privacy.",
+  "EYES_ALT": "Eye scanner screen",
+"EYES_TITLE": "Intelligent eye analysis",
+"EYES_TEXT": "Users can take a photo or select an image from the gallery. The application analyzes the eyes and displays the detection results, confidence level, and a risk indication."
+  },
+  "TECH": {
+    "EYEBROW": "Technical architecture",
+    "TITLE": "Technology choices",
+    "DESCRIPTION": "Each tool addresses a specific performance, security, or user experience need.",
+    "WHY": "Why?",
+    "FLUTTER_ROLE": "Mobile interface",
+    "FLUTTER_TEXT": "A smooth interface for iOS and Android from a single codebase, providing a consistent user experience.",
+    "FIREBASE_ROLE": "Authentication and data",
+    "FIREBASE_TEXT": "Authentication and data storage services that support rapid prototyping without requiring a complex server to manage.",
+    "OCR_ROLE": "Text recognition (OCR)",
+    "OCR_TEXT": "On-device text recognition from images to help extract information from scanned documents.",
+    "OLLAMA_ROLE": "Local language model",
+    "OLLAMA_TEXT": "Running a language model locally can help protect data privacy and avoid recurring API costs."
+  },
+  "VALUE": {
+    "EYEBROW": "Project review",
+    "TITLE": "My contribution",
+    "INTRO": "MedScan AI challenged me to connect a mobile application built with Flutter to AI technologies, including OCR and language models. I worked on an architecture suited to the application while keeping users and the privacy of health data at the center of the design.",
+    "CHALLENGES_TITLE": "Challenges addressed",
+    "CHALLENGE1": "Running a language model locally",
+    "CHALLENGE2": "Extracting usable text from prescriptions and labels",
+    "CHALLENGE3": "Considering the privacy of sensitive health data",
+    "SKILLS_TITLE": "Skills developed",
+    "SKILL1": "Cross-platform mobile development",
+    "SKILL2": "AI integration: OCR and language models",
+    "SKILL3": "Firebase, UX/UI, and project management",
+    "FUTURE_TITLE": "Future improvements",
+    "FUTURE1": "Medication reminders",
+    "FUTURE2": "Scan and prescription history",
+    "FUTURE3": "Multilingual interface",
+    "NOTE": "The information provided is for guidance only and does not replace advice from a healthcare professional."
+  },
+  "CTA": {
+  
+  "TITLE": "A project combining mobile development and AI",
+  "DESCRIPTION": "An intelligent mobile solution combining visual recognition, medical document analysis, and AI-powered assistance.",
+  "ALL_PROJECTS": "Back to my projects"
+}
+},
+  "EDULEARN": {
+    "NAV_BACK": "Back to projects",
+    "HERO": {
+      "CATEGORY": "Web Development · E-learning",
+      "TITLE": "Interactive",
+      "TITLE_HIGHLIGHT": "E-Learning",
+      "TITLE_END": "Platform",
+      "INTRO": "An online learning platform designed to simplify the management of training programs, users, and educational content, with dedicated spaces for students, trainers, and administrators.",
+      "FACT1_TITLE": "3 workspaces",
+      "FACT1_TEXT": "Student, trainer, administrator",
+      "FACT2_TITLE": "Full-stack",
+      "FACT2_TEXT": "Angular + Spring Boot",
+      "FACT3_TITLE": "Learning management",
+      "FACT3_TEXT": "Courses, lessons, and quizzes",
+      "COVER_ALT": "Preview of the interactive E-Learning platform",
+      "FACT4_TITLE": "Application deployed",
+"FACT4_TEXT": "Frontend and backend online",
+"DEPLOYED": "Frontend & Backend deployed"
+    },
+    "CONTEXT": {
+      "CATEGORY": "Why this project",
+      "TITLE": "Bringing learning together in one place",
+      "CARD1_TITLE": "The challenge",
+      "CARD1_TEXT": "Training programs, users, and educational content are often scattered across multiple tools.",
+      "CARD2_TITLE": "The idea",
+      "CARD2_TEXT": "A single platform to centralize training programs, manage students and trainers, and organize courses, lessons, and quizzes.",
+      "CARD3_TITLE": "The objective",
+      "CARD3_TEXT": "Provide each user role with a dedicated workspace and enable educational progress tracking."
+    },
+    "FEATURES": {
+      "CATEGORY": "What the platform offers",
+      "TITLE": "Main features",
+      "AUTH_TITLE": "Authentication",
+      "AUTH_TEXT": "Access to the platform through interfaces tailored to different user roles.",
+      "COURSES_TITLE": "Training management",
+      "COURSES_TEXT": "Browse training programs, courses, and educational content.",
+      "TRAINERS_TITLE": "Trainer management",
+      "TRAINERS_TEXT": "An interface for managing trainers and tracking their applications.",
+      "STUDENTS_TITLE": "Student management",
+      "STUDENTS_TEXT": "View and manage student accounts and their enrollments.",
+      "DASHBOARD_TITLE": "Dashboard",
+      "DASHBOARD_TEXT": "Visualize platform indicators and management statistics.",
+      "QUIZ_TITLE": "Quizzes and lessons",
+      "QUIZ_TEXT": "Manage quizzes and lessons associated with the available training programs."
+    },
+    "GALLERY": {
+      "CATEGORY": "Visual overview",
+      "TITLE": "Project gallery",
+      "INTRO": "Explore the platform's main interfaces.",
+      "HOME": "Home page",
+      "AUTH": "Authentication",
+      "DASHBOARD": "Dashboard",
+      "COURSE": "Course details",
+      "TRAINERS": "Trainer management",
+      "STUDENTS": "Student management",
+      "MY_COURSES": "My courses",
+      "QUIZ": "Quizzes and lessons"
+    },
+    "TECH": {
+      "CATEGORY": "Technical architecture",
+      "TITLE": "Technologies used",
+      "INTRO": "Each technology addresses a specific need related to structure, data, or user experience.",
+      "WHY": "Why?",
+      "ANGULAR_ROLE": "Web interface",
+      "ANGULAR_TEXT": "A structured framework with reusable components and routing tailored to the three workspaces: student, trainer, and administrator.",
+      "SPRING_ROLE": "Backend and API",
+      "SPRING_TEXT": "Used to build a robust and secure REST API with a clear layered architecture for business logic.",
+      "MYSQL_ROLE": "Database",
+      "MYSQL_TEXT": "A relational database suited to the relationships between users, training programs, courses, lessons, and enrollments.",
+      "MATERIAL_ROLE": "UI components",
+      "MATERIAL_TEXT": "Consistent, accessible, ready-to-use components ideal for dashboards, data tables, and forms."
+    },
+    "CONCLUSION": {
+      "CATEGORY": "Project review",
+      "TITLE": "What I learned from this project",
+      "INTRO": "Hands-on experience in full-stack development, web interface design, and organizing the features of an educational platform.",
+      "CHALLENGES_TITLE": "Challenges addressed",
+      "CHALLENGE1": "Managing three distinct user roles",
+      "CHALLENGE2": "Structuring training programs, courses, lessons, and quizzes",
+      "CHALLENGE3": "Designing clear and readable dashboards",
+      "SKILLS_TITLE": "Skills developed",
+      "SKILL1": "Full-stack development with Angular and Spring Boot",
+      "SKILL2": "Data modeling with MySQL",
+      "SKILL3": "Interface development with Angular Material",
+      "PERSPECTIVES_TITLE": "Future improvements",
+      "PERSPECTIVE1": "More detailed progress tracking",
+      "PERSPECTIVE2": "Course completion certificates",
+      "PERSPECTIVE3": "Notifications for students"
+    },
+    "CTA": {
+  "TITLE": "A Platform Dedicated to Online Learning",
+  "DESCRIPTION": "A full-stack project designed to organize training programs, manage students and instructors, and structure courses, lessons, and quizzes.",
+ 
+  "ALL_PROJECTS": "Back to My Projects"
+}
+  },
+  
+  "sinistre": {
+    "nav": {
+      "back": "Back to projects"
+    },
+    "hero": {
+      "category": "Data Mining · Machine Learning",
+      "title": "Home Insurance <span>Claim</span> Prediction",
+      "intro": "Development of a supervised classification approach to predict whether a claim will occur during the insurance period, based on building and policy characteristics.",
+      "pdf": "View the project presentation PDF ↗",
+      "train": "Training observations",
+      "test": "Test observations",
+      "f1": "XGBoost weighted F1-score on test data",
+      "coverAlt": "Cover image for the home insurance claim prediction project"
+    },
+    "context": {
+      "label": "01 · Project context",
+      "title": "Anticipating risks to better protect properties",
+      "description": "This project focuses on predicting home insurance claims. The goal is to use available data to build a model that classifies buildings according to their claim risk.",
+      "problem": {
+        "title": "Problem statement",
+        "text": "How can insurance data be used to better anticipate claims and improve risk assessment?"
+      },
+      "objective": {
+        "title": "Objective",
+        "text": "Build and evaluate a robust, high-performing supervised classification model based on building characteristics."
+      },
+      "approach": {
+        "title": "Approach",
+        "text": "Combine exploratory analysis, data preprocessing, feature selection, modelling and validation."
+      }
+    },
+    "method": {
+      "label": "02 · Methodology",
+      "title": "From raw data to an evaluated model",
+      "description": "A step-by-step workflow to prepare the data, train the models and analyse their performance.",
+      "step1": "Exploration",
+      "step1small": "Understand the data",
+      "step2": "Preprocessing",
+      "step2small": "Clean and transform",
+      "step3": "Selection",
+      "step3small": "Analyse features",
+      "step4": "Modelling",
+      "step4small": "Compare algorithms",
+      "step5": "Validation",
+      "step5small": "Assess generalisation"
+    },
+    "exploration": {
+      "label": "03 · Exploration and preprocessing",
+      "title": "Preparing reliable data for machine learning",
+      "description": "This stage handles missing values, skewed distributions and relationships between features. The charts below illustrate the main operations.",
+      "fig1": {
+        "title": "1. Handling extreme values",
+        "text": "The area_m2 variable has a highly skewed distribution. A logarithmic transformation is applied to reduce the influence of large values, followed by quantile-based discretisation."
+      },
+      "fig2": {
+        "title": "2. Analysing Geo_Code",
+        "text": "The distribution of Geo_Code is examined before processing. Non-numeric values are converted to missing values and then imputed using KNNImputer with seven neighbours."
+      },
+      "fig3": {
+        "title": "3. Discretisation and clustering",
+        "text": "Discretisation of area_m2_log is explored using different numbers of bins. Geo_Code is grouped into five clusters using a GMM model fitted on the training set."
+      },
+      "fig4": {
+        "title": "4. Correlation and feature selection",
+        "text": "The correlation matrix is used to examine relationships between features. According to the presented workflow, has_garden, locality and is_fenced are removed before modelling."
+      },
+      "alt1": "Area distribution before and after logarithmic transformation",
+      "alt2": "Density plot of the Geo_Code variable",
+      "alt3": "Histograms used to select discretisation parameters",
+      "alt4": "Feature correlation matrix"
+    },
+    "features": {
+      "label": "04 · Technical challenges",
+      "title": "Challenges encountered and solutions applied",
+      "missing": {
+        "title": "Missing values",
+        "text": "Some features in the dataset contain missing values.",
+        "solution": "Solution: process has_garden according to is_finished_and_fenced and use KNNImputer for the relevant variables."
+      },
+      "complex": {
+        "title": "Complex features",
+        "text": "Some information is combined in a single column, while Geo_Code requires specific processing.",
+        "solution": "Solution: split is_finished_and_fenced and group Geo_Code into five clusters using GMM."
+      },
+      "outliers": {
+        "title": "Outliers",
+        "text": "Building areas contain extreme values that may influence model training.",
+        "solution": "Solution: logarithmic transformation of area_m2 and quantile-based discretisation."
+      },
+      "imbalance": {
+        "title": "Imbalanced data",
+        "text": "Observations with and without claims are not evenly distributed.",
+        "solution": "Solution: handle inconsistent duplicates, reduce some duplicates and analyse weighted metrics."
+      },
+      "solutionLabel": "Solution:"
+    },
+    "models": {
+      "label": "05 · Modelling",
+      "title": "Comparing XGBoost and Random Forest",
+      "description": "Two supervised classification algorithms are evaluated to compare their performance and ability to detect observations from the minority class.",
+      "compare": {
+        "title": "Model comparison",
+        "text": "The weighted recall and weighted F1-score favour XGBoost in the results shown. Model selection is based on comparing several metrics.",
+        "alt": "Comparison of weighted performance metrics for XGBoost and Random Forest"
+      },
+      "importance": {
+        "title": "Feature interpretation",
+        "text": "Both models identify area_m2_log_grp as the most important feature. XGBoost then distributes importance across several other features.",
+        "alt": "Feature importance according to XGBoost and Random Forest"
+      }
+    },
+    "evaluation": {
+      "label": "06 · Evaluation",
+      "title": "Checking result stability",
+      "description": "The evaluation compares performance on training and test data, then observes how the error changes as the training set grows.",
+      "metrics": {
+        "title": "XGBoost weighted metrics",
+        "text": "On training and test data, weighted precision is 0.76 and 0.75 respectively, recall is 0.68 and 0.70, and F1-score is 0.71 for both. These values suggest stable metrics across the two sets.",
+        "alt": "Comparison of XGBoost weighted metrics on training and test data"
+      },
+      "learning": {
+        "title": "Learning curve",
+        "text": "As the number of training examples increases, test error decreases and the two curves move closer together. This suggests improved generalisation and no severe overfitting in this analysis.",
+        "alt": "XGBoost learning curve"
+      },
+      "noteTitle": "Key result:",
+      "note": "XGBoost reaches a weighted F1-score of 0.71 on the test set. Weighted metrics summarise overall performance; they do not replace a specific analysis of the “claim” class."
+    },
+    "conclusion": {
+      "label": "07 · Project summary",
+      "title": "What I developed through this project",
+      "description": "An end-to-end Data Mining workflow, from data exploration and cleaning to modelling, evaluation and interpretation of results.",
+      "skills": {
+        "title": "Technical skills"
+      },
+      "skill1": "Exploratory data analysis",
+      "skill2": "Cleaning and imputing missing values",
+      "skill3": "Feature transformation and selection",
+      "skill4": "Supervised classification",
+      "models": {
+        "title": "Models and evaluation"
+      },
+      "model1": "XGBoost and Random Forest",
+      "model2": "Comparison of weighted metrics",
+      "model3": "Interpreting feature importance",
+      "model4": "Learning curve analysis",
+      "future": {
+        "title": "Future directions"
+      },
+      "future1": "Integrate climate and natural hazard data",
+      "future2": "Explore an alert system for at-risk buildings",
+      "future3": "Consider deploying the model"
+    },
+    "footer": {
+  "title": "A Project at the Intersection of Data and Machine Learning",
+  "description": "A supervised classification approach that leverages home insurance data to predict claims and compare model performance.",
+  "all": "Back to My Projects"
+}
+  },
+  "SALARY": {
+    "NAV_BACK": "Back to projects",
+    "CATEGORY": "BUSINESS INTELLIGENCE · DATA ANALYTICS",
+    "HERO": {
+      "TITLE": "Tech Salary Analytics",
+      "INTRO": "A multidimensional analysis of salaries in the technology sector through a complete business intelligence pipeline, from data integration to interactive visualization.",
+      "DISCOVER": "Explore the project",
+      "COVER_ALT": "Tech Salary Analytics project cover"
+    },
+    "OVERVIEW": {
+      "LABEL": "01 — OVERVIEW",
+      "TITLE": "Understanding salaries in tech",
+      "INTRO": "Transform raw data into actionable insights through a structured business intelligence architecture.",
+      "ETL_TITLE": "Data integration",
+      "ETL_TEXT": "Implementation of an ETL process with SSIS to prepare, transform, and load data into the data warehouse.",
+      "MODEL_TITLE": "Dimensional modeling",
+      "MODEL_TEXT": "Organizing data in a Data Warehouse using a star schema with a fact table and dimensions.",
+      "OLAP_TITLE": "Multidimensional analysis",
+      "OLAP_TEXT": "Exploring measures and dimensions through an OLAP cube and MDX queries.",
+      "DASHBOARD_TITLE": "Interactive visualization",
+      "DASHBOARD_TEXT": "Building a Power BI dashboard to explore salaries by job, experience level, location, and year."
+    },
+    "ETL": {
+      "LABEL": "02 — DATA INTEGRATION",
+      "TITLE": "From raw data to the data warehouse",
+      "INTRO": "The ETL process prepares and loads the data required for business intelligence analysis.",
+      "POINT1": "Loading dimensions",
+      "POINT2": "Loading the fact table",
+      "TOOL": "SSIS",
+      "ALT": "SSIS ETL workflow diagram",
+      "CAPTION": "ETL workflow implemented with SQL Server Integration Services (SSIS)."
+    },
+    "MODEL": {
+      "LABEL": "03 — DATA MODELING",
+      "TITLE": "A star-schema Data Warehouse",
+      "INTRO": "The salary fact table is connected to job, location, experience, and time dimensions to support cross-dimensional analysis.",
+      "POINT1": "A salary fact table",
+      "POINT2": "Dimensions: job, location, experience, and time",
+      "TOOL": "Data Warehouse",
+      "ALT": "Star schema of the salary Data Warehouse",
+      "CAPTION": "Dimensional model of the salary Data Warehouse."
+    },
+    "OLAP": {
+      "LABEL": "04 — MULTIDIMENSIONAL ANALYSIS",
+      "TITLE": "Explore measures with SSAS and MDX",
+      "INTRO": "Using the multidimensional model to query salary indicators and compare results across different dimensions.",
+      "POINT1": "OLAP cube: measures and dimensions",
+      "POINT2": "MDX queries",
+      "TOOL": "SSAS / MDX",
+      "ALT": "SSAS MDX interface displaying salary analysis results",
+      "CAPTION": "MDX analysis interface and OLAP cube results."
+    },
+    "DASHBOARD": {
+      "LABEL": "05 — VISUALIZATION",
+      "TITLE": "Turning data into insights",
+      "INTRO": "The dashboard summarizes key indicators and enables salary comparisons by year, experience level, job, and location.",
+      "ALT": "Power BI dashboard analyzing salaries in the tech sector",
+      "CAPTION": "Power BI dashboard — salary analysis in the tech sector.",
+      "INSIGHT1_TITLE": "Yearly trends",
+      "INSIGHT1_TEXT": "Track changes in average salary over the period studied.",
+      "INSIGHT2_TITLE": "Experience level",
+      "INSIGHT2_TEXT": "Compare salaries across Junior, Mid, Senior, and Expert levels.",
+      "INSIGHT3_TITLE": "Location",
+      "INSIGHT3_TEXT": "Explore salary differences across the locations represented in the dataset.",
+      "INSIGHT4_TITLE": "Highest-paying jobs",
+      "INSIGHT4_TEXT": "Identify the jobs with the highest average salaries in the dataset."
+    },
+    "STACK": {
+      "LABEL": "06 — TECH STACK",
+      "TITLE": "Technologies used",
+      "SQL_TITLE": "SQL Server",
+      "SQL_TEXT": "Data storage and management",
+      "SSIS_TITLE": "SSIS",
+      "SSIS_TEXT": "Extraction, transformation, and loading",
+      "DW_TITLE": "Data Warehouse",
+      "DW_TEXT": "Star-schema dimensional modeling",
+      "OLAP_TITLE": "SSAS / MDX",
+      "OLAP_TEXT": "Multidimensional analysis",
+      "BI_TITLE": "Power BI",
+      "BI_TEXT": "Data visualization and dashboards"
+    },
+    "VALUE": {
+      "LABEL": "07 — PROJECT VALUE",
+      "TITLE": "What I gained from this project",
+      "INTRO": "Tech Salary Analytics allowed me to build an end-to-end business intelligence solution, connecting every stage from raw data to indicators that can be explored and compared. Each tool has a specific role, and their integration is what makes the analysis valuable.",
+      "CHALLENGES_TITLE": "Challenges overcome",
+      "CHALLENGE1": "Prepare and clean raw data before loading it into the warehouse",
+      "CHALLENGE2": "Design a star schema suited to cross-dimensional analysis",
+      "CHALLENGE3": "Maintain consistent results across the OLAP cube, MDX queries, and dashboard",
+      "SKILLS_TITLE": "Skills gained",
+      "SKILL1": "Building ETL workflows with SSIS",
+      "SKILL2": "Dimensional modeling: fact tables and dimensions",
+      "SKILL3": "OLAP analysis with SSAS and MDX queries",
+      "SKILL4": "Designing dashboards with Power BI",
+      "FUTURE_TITLE": "Future improvements",
+      "FUTURE1": "Automate data refreshes with scheduled loads",
+      "FUTURE2": "Extend the model with additional dimensions and years",
+      "FUTURE3": "Publish the dashboard to share it with other users",
+      "NOTE": "This educational project uses a dataset about salaries in the technology sector."
+    },
+    "CTA": {
+      "TITLE": "An end-to-end business intelligence pipeline",
+      "DESCRIPTION": "From data integration to visualization: a complete Business Intelligence solution designed to support decision-making.",
+      "ALL_PROJECTS": "Back to projects"
+    }
+  },
+  "EXPERIENCE": {
+      "TITLE": "Professional",
+      "SUBTITLE": "experience",
+      "DESCRIPTION": "My internships and company projects, with the technologies I used.",
+      "NAV_LABEL": "Browse experiences",
+      "NEWER": "More recent",
+      "OLDER": "Older",
+      "DETAILS": "View details",
+      "CLOSE": "Close",
+      "MISSIONS_TITLE": "Missions",
+      "TECH_TITLE": "Technologies used",
+      "DEMO": "View demo",
+      "TECH": {
+        "PYTHON": {
+          "ROLE": "Language",
+          "TEXT": "Versatile language widely used for backend, data and artificial intelligence."
+        },
+        "FASTAPI": {
+          "ROLE": "API framework",
+          "TEXT": "Modern, fast Python framework for building REST APIs, with automatic documentation."
+        },
+        "DOTNET": {
+          "ROLE": "Framework",
+          "TEXT": "Microsoft development platform for building robust applications and APIs."
+        },
+        "SQLSERVER": {
+          "ROLE": "Database",
+          "TEXT": "Microsoft's relational database management system."
+        },
+        "LLM": {
+          "ROLE": "Artificial intelligence",
+          "TEXT": "Large language models able to understand and generate natural-language text."
+        },
+        "OLLAMA": {
+          "ROLE": "Model runtime",
+          "TEXT": "Tool to run language models locally, without sending data to an external service."
+        },
+        "NEO4J": {
+          "ROLE": "Graph database",
+          "TEXT": "Graph-oriented database, well suited to highly connected data."
+        },
+        "RAG": {
+          "ROLE": "AI technique",
+          "TEXT": "Retrieval-augmented generation: the model relies on documents or data to produce more reliable answers."
+        },
+        "REACT": {
+          "ROLE": "Frontend",
+          "TEXT": "JavaScript library for building component-based user interfaces."
+        },
+        "NODEJS": {
+          "ROLE": "Backend",
+          "TEXT": "Server-side JavaScript runtime used to build APIs and services."
+        },
+        "AI": {
+          "ROLE": "Artificial intelligence",
+          "TEXT": "Integration of artificial intelligence features into the application, such as text recognition (OCR)."
+        },
+        "LARAVEL": {
+          "ROLE": "PHP framework",
+          "TEXT": "Structured (MVC) PHP framework to quickly build web applications."
+        },
+        "PHP": {
+          "ROLE": "Language",
+          "TEXT": "Widely used server-side programming language for web development."
+        },
+        "MYSQL": {
+          "ROLE": "Database",
+          "TEXT": "Open-source relational database management system."
+        },
+        "ANGULAR": {
+          "ROLE": "Frontend",
+          "TEXT": "Google's TypeScript framework for building single-page web applications."
+        },
+        "SPRINGBOOT": {
+          "ROLE": "Backend",
+          "TEXT": "Java framework to quickly build production-ready applications and APIs."
+        }
+      },
+      "ITEMS": {
+  "edi2026": {
+    "ROLE": "AI & Backend Developer",
+    "TYPE": "Summer Internship",
+    "PERIOD": "July 2026 – August 2026",
+"SUMMARY": "Development of an AI-powered chatbot that converts natural-language questions into SQL queries, using Python, FastAPI, and Ollama.",    "MISSION1": "Analyze the SQL Server database schema and identify the tables and relationships required to answer user queries.",
+    "MISSION2": "Design a Text-to-SQL system that converts natural-language questions into SQL SELECT queries.",
+    "MISSION3": "Develop backend services with Python and FastAPI, and integrate Ollama to generate queries using a local language model.",
+    "MISSION4": "Test database interactions and improve the reliability of the chatbot's responses."
+  },
+  "placement2026": {
+    "ROLE": "AI Developer – Intelligent Edge Service Placement",
+    "TYPE": "Final-Year Academic Project (PFA)",
+    "PERIOD": "February 2026 – June 2026",
+"SUMMARY": "Development of an intelligent Edge service placement system for Industry 5.0, using user intents to optimize resource allocation across Edge nodes, with an interactive dashboard, graph visualization, and a RAG-powered AI chatbot.",
+    "MISSION1": "Analyze user intents to identify requested services and their resource requirements, including CPU, memory, storage, and bandwidth.",
+    "MISSION2": "Develop backend components with Python and FastAPI to process requests and support the intelligent service placement logic.",
+    "MISSION3": "Use Neo4j to represent relationships between services, Edge nodes, and resources, and integrate a chatbot based on RAG and a local language model through Ollama.",
+    "MISSION4": "Contribute to dashboard visualization and placement history, project documentation, report writing, and preparation of the final presentation before a jury."
+  },
+  "edi2025": {
+    "ROLE": "Full-Stack Developer",
+    "TYPE": "Summer Internship",
+    "PERIOD": "July 2025 – August 2025",
+"SUMMARY": "Development of a full-stack sales management application using React and SQL Server, featuring invoice management and AI-powered OCR to automate data extraction from documents and streamline invoice processing.",    "MISSION1": "Develop React interfaces for managing sales data and invoicing operations.",
+    "MISSION2": "Integrate frontend interactions with backend services and the SQL Server database.",
+    "MISSION3": "Implement an OCR workflow to extract text from documents and explore AI-assisted invoice information extraction.",
+    "MISSION4": "Test data management, search, and update functionalities."
+  },
+  "digital2024": {
+    "ROLE": "Full-Stack Developer",
+    "TYPE": "PFE Internship",
+    "PERIOD": "February 2024 – May 2024",
+"SUMMARY": "Designed and developed a school administration web application using Laravel, PHP, and MySQL, integrating Zoom to streamline administrative services and facilitate online meetings.",    "MISSION1": "Analyze school administration requirements and design the application's main features.",
+    "MISSION2": "Develop web application features using Laravel and PHP.",
+    "MISSION3": "Design and manage application data using MySQL.",
+    "MISSION4": "Integrate Zoom-related functionality to support online meetings."
+  },
+  "iway2022": {
+    "ROLE": "Full-Stack Developer",
+    "TYPE": "PFA Internship",
+    "PERIOD": "June 2022 – August 2022",
+"SUMMARY": "Designed and developed a full-stack pharmacy management web application using Angular and Spring Boot to streamline pharmacy operations and centralize data management.",    "MISSION1": "Design and develop user interfaces using Angular.",
+    "MISSION2": "Develop backend services and business logic using Spring Boot.",
+    "MISSION3": "Integrate the frontend with backend services to support application operations.",
+    "MISSION4": "Contribute to data management and testing of the application's main features."
+  }
+},
+      "OVERVIEW": "Overview",
+      "STAT_MISSIONS": "Missions",
+      "STAT_TECH": "Technologies"
+    },
+    
+"AWARD": {
+  "IMAGE_ALT": "Eco Noyaux project financial feasibility presentation",
+  "EYEBROW": "Award",
+  "PRIZE": "1st Prize",
+  "COMPETITION": "Accrochez Votre Startup",
+  "PROJECT": "Eco Noyaux",
+  "ORGANIZATION": "NAU Sfax",
+  "YEAR": "2026",
+  "DESCRIPTION": "A startup combining mobile artificial intelligence, satellite imagery, and a B2B platform, awarded first prize by a jury of investors and business support organizations.",
+  "TAGS": {
+    "MOBILE_AI": "Mobile AI",
+    "SATELLITE": "ESA Sentinel Satellite Imagery",
+    "B2B": "B2B Platform"
+  },
+  "FACTS": {
+    "PRIZE_TITLE": "1st Prize",
+    "PRIZE_TEXT": "Award received",
+    "SATELLITE_TITLE": "ESA Sentinel",
+    "SATELLITE_TEXT": "Satellite imagery",
+    "INNOVATION_TITLE": "Mobile AI",
+    "INNOVATION_TEXT": "Technological innovation"
+  },
+  "BUTTON": "Explore the project"
+},
+"SKILLSET": {
+  "TITLE": "My",
+  "SUBTITLE": "skills",
+  "DESCRIPTION": "The languages, frameworks and tools I use to design, build and deploy solutions, with a specialization in generative artificial intelligence.",
+  "STAT_DOMAINS": "Domains",
+  "STAT_TECH": "Technologies",
+  "FEATURED_LABEL": "My specialty",
+  "FEATURED_TEXT": "Generative AI: from text recognition (OCR) to language models (LLM) and RAG systems.",
+  "CATEGORIES": {
+    "AI": "AI & Data",
+    "CODE": "Languages",
+    "FRAMEWORKS": "Frameworks",
+    "DATABASES": "Databases",
+    "TOOLS": "Tools",
+    "METHODS": "Methodologies"
+  },
+  "SPOKEN_TITLE": "Languages",
+  "SPOKEN": { "AR": "Arabic", "FR": "French", "EN": "English" }
+},
+"CONTACT": {
+      "LABEL": "Contact",
+      "TITLE": "An opportunity?",
+      "SUBTITLE": "Let's talk.",
+      "DESCRIPTION": "Currently looking for a final-year (PFE) internship in computer engineering, I am open to opportunities that will allow me to contribute to innovative projects in software development and artificial intelligence.",
+      "THANKS": "Thank you for visiting."
+    }
+
+  }
+
+
+

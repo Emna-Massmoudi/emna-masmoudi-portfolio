@@ -1,0 +1,202 @@
+
+<section id="projects" class="projects-section">
+
+  <!-- En-tête -->
+  <div class="projects-header">
+    <h2>
+      {{ 'PROJECTS.TITLE' | translate }}
+      <span>{{ 'PROJECTS.SUBTITLE' | translate }}</span>
+    </h2>
+
+    <p class="projects-description">
+      {{ 'PROJECTS.DESCRIPTION' | translate }}
+    </p>
+  </div>
+
+  <!-- Liste des projets -->
+  <div class="projects-grid">
+
+    <!-- Projet 1 : MedScan AI -->
+    <article
+      class="project-card medscan-card"
+      (click)="openProject('medscan')"
+      (keydown.enter)="openProject('medscan')"
+      (keydown.space)="openProject('medscan'); $event.preventDefault()"
+      tabindex="0"
+      role="link"
+      [attr.aria-label]="'PROJECTS.MEDSCAN.TITLE' | translate"
+    >
+      <div class="project-cover">
+        <img
+          src="/projects/medscan-ai-cover.png"
+          alt="MedScan AI"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="project-content">
+        <p class="project-category">
+  {{ 'MEDSCAN.CATEGORY' | translate }}
+</p>
+
+        <h3>MedScan AI</h3>
+
+        <p class="project-description">
+          {{ 'MEDSCAN.HERO.INTRO' | translate }}
+        </p>
+
+        <div class="project-technologies">
+          <span>Flutter</span>
+          <span>Firebase</span>
+          <span>Google ML Kit OCR</span>
+          <span>Ollama</span>
+        </div>
+
+        <span class="project-link">
+          {{ 'PROJECTS.VIEW_PROJECT' | translate }}
+          <span aria-hidden="true">↗</span>
+        </span>
+      </div>
+    </article>
+
+    <!-- Projet 2 : EduLearn -->
+    <article
+      class="project-card edulearn-card"
+      (click)="openProject('edulearn')"
+      (keydown.enter)="openProject('edulearn')"
+      (keydown.space)="openProject('edulearn'); $event.preventDefault()"
+      tabindex="0"
+      role="link"
+      [attr.aria-label]="'PROJECTS.EDULEARN.TITLE' | translate"
+    >
+      <div class="project-cover">
+        <img
+          src="/E-Learning/Cover.png"
+          alt="EduLearn — Plateforme E-Learning Interactive"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="project-content">
+        <p class="project-category">
+          {{ 'EDULEARN.HERO.CATEGORY' | translate }}
+        </p>
+
+        <h3>
+          {{ 'EDULEARN.HERO.TITLE' | translate }}
+        </h3>
+
+        <p class="project-description">
+          {{ 'EDULEARN.HERO.INTRO' | translate }}
+        </p>
+
+        <div class="project-technologies">
+          <span>Angular</span>
+          <span>Spring Boot</span>
+          <span>MySQL</span>
+          <span>Angular Material</span>
+        </div>
+
+        <span class="project-link">
+          {{ 'PROJECTS.VIEW_PROJECT' | translate }}
+          <span aria-hidden="true">↗</span>
+        </span>
+      </div>
+    </article>
+
+    <!-- Projet 3 : Prédiction des sinistres -->
+    <article
+      class="project-card sinistre-card"
+      (click)="openProject('sinistre-prediction')"
+      (keydown.enter)="openProject('sinistre-prediction')"
+      (keydown.space)="openProject('sinistre-prediction'); $event.preventDefault()"
+      tabindex="0"
+      role="link"
+      [attr.aria-label]="'sinistre.hero.title' | translate"
+    >
+      <div class="project-cover">
+        <img
+          src="/Sinistre/cover.png"
+          alt="Prédiction des sinistres en assurance habitation"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="project-content">
+        <p class="project-category">
+          {{ 'sinistre.hero.category' | translate }}
+        </p>
+
+        <h3>
+          {{ 'sinistre.hero.title' | translate }}
+        </h3>
+
+        <p class="project-description">
+          {{ 'sinistre.hero.intro' | translate }}
+        </p>
+
+        <div class="project-technologies">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>Scikit-learn</span>
+          <span>XGBoost</span>
+          <span>Random Forest</span>
+        </div>
+
+        <span class="project-link">
+          {{ 'PROJECTS.VIEW_PROJECT' | translate }}
+          <span aria-hidden="true">↗</span>
+        </span>
+      </div>
+    </article>
+    
+    <!-- Projet 4 : Tech Salary Analytics -->
+    <article
+      class="project-card salary-analytics-card"
+      (click)="openProject('tech-salary-analytics')"
+      (keydown.enter)="openProject('tech-salary-analytics')"
+      (keydown.space)="openProject('tech-salary-analytics'); $event.preventDefault()"
+      tabindex="0"
+      role="link"
+      aria-label="Tech Salary Analytics — Analyse des salaires dans la tech"
+    >
+      <div class="project-cover">
+        <img
+          src="/Tech%20Salary%20Analytics/cover.png"
+          alt="Tech Salary Analytics — Dashboard Power BI d'analyse des salaires"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="project-content">
+        <p class="project-category">
+          Business Intelligence · Data Analytics
+        </p>
+
+        <h3>Tech Salary Analytics</h3>
+
+        <p class="project-description">
+          Projet décisionnel consacré à l'analyse des salaires dans
+          le secteur technologique, de l'intégration des données avec
+          SSIS à la modélisation dimensionnelle, l'analyse OLAP et
+          la visualisation interactive avec Power BI.
+        </p>
+
+        <div class="project-technologies">
+          <span>SQL Server</span>
+          <span>SSIS</span>
+          <span>Data Warehouse</span>
+          <span>SSAS / MDX</span>
+          <span>Power BI</span>
+        </div>
+
+        <span class="project-link">
+          {{ 'PROJECTS.VIEW_PROJECT' | translate }}
+          <span aria-hidden="true">↗</span>
+        </span>
+      </div>
+    </article>
+
+
+  </div>
+</section>

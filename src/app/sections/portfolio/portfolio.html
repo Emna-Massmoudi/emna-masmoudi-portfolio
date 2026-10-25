@@ -1,0 +1,82 @@
+<div class="portfolio">
+
+  <!-- Navigation (fixe, avec léger flou) -->
+  <header class="navbar">
+    <a href="#home" class="logo">EMNA<span>.</span></a>
+
+    <nav class="nav-links">
+      <a href="#home" class="active">{{ 'NAV.HOME' | translate }}</a>
+      <a href="#journey">{{ 'NAV.JOURNEY' | translate }}</a>
+      <a href="#experience">{{ 'NAV.EXPERIENCE' | translate }}</a>
+      <a href="#projects">{{ 'NAV.PROJECTS' | translate }}</a>
+      <a href="#skills">{{ 'NAV.SKILLS' | translate }}</a>
+      <a href="#contact">{{ 'NAV.CONTACT' | translate }}</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="language-button" (click)="toggleLanguage()">
+        {{ isEnglish ? 'FR' : 'EN' }}
+      </button>
+
+      <a [href]="cvUrl" class="cv-button" download="Emna_Masmoudi_CV.pdf">
+  {{ 'NAV.DOWNLOAD_CV' | translate }} ↓
+</a>
+    </div>
+  </header>
+
+  <!-- Présentation principale -->
+  <app-hero></app-hero> 
+<!-- Domaines IT : bande défilante -->
+  <section class="stats" id="domains">
+
+    <!-- Icônes définies une seule fois, réutilisées plus bas -->
+    <svg class="stats-sprite" aria-hidden="true" focusable="false">
+      <symbol id="ic-web" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="ic-mobile" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+      <symbol id="ic-ai" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+      <symbol id="ic-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="ic-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+    </svg>
+
+    <p class="stats-label">{{ 'SKILLS.LABEL' | translate }}</p>
+
+    <div class="stats-marquee">
+      <div class="stats-track">
+
+        <div class="stats-group">
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-web"/></svg><span>{{ 'SKILLS.WEB' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-mobile"/></svg><span>{{ 'SKILLS.MOBILE' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-ai"/></svg><span>{{ 'SKILLS.AI' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-data"/></svg><span>{{ 'SKILLS.DATA' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-cloud"/></svg><span>{{ 'SKILLS.CLOUD' | translate }}</span></div>
+        </div>
+
+        <!-- Copie identique pour que la boucle soit continue -->
+        <div class="stats-group" aria-hidden="true">
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-web"/></svg><span>{{ 'SKILLS.WEB' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-mobile"/></svg><span>{{ 'SKILLS.MOBILE' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-ai"/></svg><span>{{ 'SKILLS.AI' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-data"/></svg><span>{{ 'SKILLS.DATA' | translate }}</span></div>
+          <div class="stat-item"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-cloud"/></svg><span>{{ 'SKILLS.CLOUD' | translate }}</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <app-parcours></app-parcours>
+ <!-- Expérience professionnelle -->
+  <app-experience></app-experience>
+
+  <!-- Projets -->
+  <app-projects></app-projects>
+
+ 
+
+<app-distinction></app-distinction>
+
+<app-skills></app-skills>
+  <!-- Contact -->
+  <app-contact></app-contact>
+
+</div>

@@ -1,0 +1,75 @@
+
+<section id="award" class="distinction">
+
+  <!-- Image du projet et trophée -->
+  <div class="distinction-media">
+    <span class="trophy" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+        <path d="M4 22h16"/>
+        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+      </svg>
+    </span>
+
+    <img
+      src="/EcoNoyaux/cover.png"
+      [alt]="'AWARD.IMAGE_ALT' | translate"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- Informations sur la distinction -->
+  <div class="distinction-content">
+
+    <p class="eyebrow">
+      {{ 'AWARD.EYEBROW' | translate }}
+    </p>
+
+    <h2>
+      {{ 'AWARD.PRIZE' | translate }}
+      <span>{{ 'AWARD.COMPETITION' | translate }}</span>
+    </h2>
+
+    <p class="distinction-sub">
+      {{ 'AWARD.PROJECT' | translate }}
+      · {{ 'AWARD.ORGANIZATION' | translate }}
+      · {{ 'AWARD.YEAR' | translate }}
+    </p>
+
+    <p class="distinction-text">
+      {{ 'AWARD.DESCRIPTION' | translate }}
+    </p>
+
+    <!-- Domaines clés -->
+    <div class="distinction-tags">
+      <span>{{ 'AWARD.TAGS.MOBILE_AI' | translate }}</span>
+      <span>{{ 'AWARD.TAGS.SATELLITE' | translate }}</span>
+      <span>{{ 'AWARD.TAGS.B2B' | translate }}</span>
+    </div>
+
+    <!-- Points forts du projet -->
+    <ul class="distinction-facts">
+
+      <li>
+        <strong>{{ 'AWARD.FACTS.PRIZE_TITLE' | translate }}</strong>
+        <span>{{ 'AWARD.FACTS.PRIZE_TEXT' | translate }}</span>
+      </li>
+
+      <li>
+        <strong>{{ 'AWARD.FACTS.SATELLITE_TITLE' | translate }}</strong>
+        <span>{{ 'AWARD.FACTS.SATELLITE_TEXT' | translate }}</span>
+      </li>
+
+      <li>
+        <strong>{{ 'AWARD.FACTS.INNOVATION_TITLE' | translate }}</strong>
+        <span>{{ 'AWARD.FACTS.INNOVATION_TEXT' | translate }}</span>
+      </li>
+
+    </ul>
+
+    
+  </div>
+</section>

@@ -1,0 +1,361 @@
+
+<section id="experience" class="experience-section">
+
+  <!-- En-tête -->
+  <div class="experience-header">
+    <h2>
+      {{ 'EXPERIENCE.TITLE' | translate }}
+      <span>{{ 'EXPERIENCE.SUBTITLE' | translate }}</span>
+    </h2>
+
+    <p class="experience-description">
+      {{ 'EXPERIENCE.DESCRIPTION' | translate }}
+    </p>
+  </div>
+
+  <!-- Liste des expériences -->
+  <div class="experience-grid">
+    @for (exp of visibleExperiences(); track exp.id) {
+      <div class="experience-item">
+
+        <!-- Ligne du temps -->
+        <div class="exp-timeline" aria-hidden="true">
+          <span class="exp-dot"></span>
+          <span class="exp-year">{{ exp.year }}</span>
+          <span class="exp-rail"></span>
+        </div>
+
+        <!-- Carte d'expérience -->
+        <article
+          class="experience-card"
+          (click)="open(exp, $event)"
+          (keydown.enter)="open(exp, $event)"
+          (keydown.space)="open(exp, $event); $event.preventDefault()"
+          tabindex="0"
+          role="button"
+          aria-haspopup="dialog"
+          [attr.aria-label]="
+            ('EXPERIENCE.ITEMS.' + exp.id + '.ROLE' | translate)
+            + ' — ' + exp.title
+            + ' — ' + ('EXPERIENCE.DETAILS' | translate)
+          "
+        >
+
+          <!-- Logo, poste et entreprise -->
+          <div class="exp-head">
+            <div class="exp-logo" aria-hidden="true">
+              @if (exp.logo) {
+                <img [src]="exp.logo" alt="" loading="lazy" />
+              } @else {
+                {{ exp.initials }}
+              }
+            </div>
+
+            <div class="exp-title">
+              <h3>
+                {{ 'EXPERIENCE.ITEMS.' + exp.id + '.ROLE' | translate }}
+              </h3>
+
+              <p class="exp-company">
+                {{ exp.title }}
+              </p>
+
+              <p class="exp-dates">
+                {{ 'EXPERIENCE.ITEMS.' + exp.id + '.PERIOD' | translate }}
+              </p>
+            </div>
+          </div>
+
+          <!-- Type et localisation -->
+          <div class="exp-meta">
+            <span class="exp-type">
+              {{ 'EXPERIENCE.ITEMS.' + exp.id + '.TYPE' | translate }}
+            </span>
+
+            <span class="exp-location">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/>
+                <circle cx="12" cy="10" r="2.5"/>
+              </svg>
+              {{ exp.location }}
+            </span>
+          </div>
+
+          <!-- Description -->
+          <p class="exp-summary">
+            {{ 'EXPERIENCE.ITEMS.' + exp.id + '.SUMMARY' | translate }}
+          </p>
+
+          <!-- Technologies principales -->
+          <div class="exp-technologies">
+            @for (key of exp.techs.slice(0, 4); track key) {
+              <span>{{ tech[key].name }}</span>
+            }
+
+            @if (exp.techs.length > 4) {
+              <span class="exp-more">
+                +{{ exp.techs.length - 4 }}
+              </span>
+            }
+          </div>
+
+          <!-- Lien vers les détails -->
+          <span class="exp-link">
+            {{ 'EXPERIENCE.DETAILS' | translate }}
+            <span aria-hidden="true">↗</span>
+          </span>
+
+        </article>
+      </div>
+    }
+  </div>
+
+  <!-- Navigation entre les pages -->
+  @if (totalPages > 1) {
+    <nav
+      class="experience-pager"
+      [attr.aria-label]="'EXPERIENCE.NAV_LABEL' | translate"
+    >
+
+      <button
+        type="button"
+        class="pager-arrow"
+        (click)="prev()"
+        [disabled]="page() === 0"
+        [attr.aria-label]="'EXPERIENCE.NEWER' | translate"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+
+      <div class="pager-center">
+
+        <!-- Période affichée -->
+        @if (visibleExperiences().length > 0) {
+          <span class="pager-range" aria-live="polite">
+            {{ visibleExperiences()[0].year }}
+            –
+            {{ visibleExperiences()[visibleExperiences().length - 1].year }}
+          </span>
+        }
+
+        <!-- Indicateurs de pages -->
+        <div class="pager-dots">
+          @for (p of pages; track p) {
+            <button
+              type="button"
+              class="pager-dot"
+              [class.is-active]="page() === p"
+              [attr.aria-label]="(p + 1) + ' / ' + totalPages"
+              [attr.aria-current]="page() === p ? 'page' : null"
+              (click)="goTo(p)"
+            ></button>
+          }
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="pager-arrow"
+        (click)="next()"
+        [disabled]="page() === totalPages - 1"
+        [attr.aria-label]="'EXPERIENCE.OLDER' | translate"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
+
+    </nav>
+  }
+
+  <!-- Fenêtre modale des détails -->
+  @if (selected(); as exp) {
+    <div class="exp-modal-backdrop" (click)="close()">
+
+      <div
+        class="exp-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="exp-modal-title"
+        (click)="$event.stopPropagation()"
+      >
+
+        <!-- Bouton de fermeture -->
+        <button
+          #closeBtn
+          type="button"
+          class="exp-modal-close"
+          (click)="close()"
+          [attr.aria-label]="'EXPERIENCE.CLOSE' | translate"
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
+
+        <!-- Fiche d'identité -->
+        <aside class="exp-modal-side">
+
+          <span class="exp-modal-year" aria-hidden="true">
+            {{ exp.year }}
+          </span>
+
+          <div class="exp-modal-logo" aria-hidden="true">
+            @if (exp.logo) {
+              <img [src]="exp.logo" alt="" />
+            } @else {
+              {{ exp.initials }}
+            }
+          </div>
+
+          <div class="exp-modal-identity">
+
+            <span class="exp-type">
+              {{ 'EXPERIENCE.ITEMS.' + exp.id + '.TYPE' | translate }}
+            </span>
+
+            <!-- Poste occupé -->
+            <h3 id="exp-modal-title">
+              {{ 'EXPERIENCE.ITEMS.' + exp.id + '.ROLE' | translate }}
+            </h3>
+
+            <!-- Entreprise ou projet -->
+            <p class="exp-company">
+              {{ exp.title }}
+            </p>
+
+          </div>
+
+          <!-- Période et localisation -->
+          <ul class="exp-modal-facts">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <path d="M16 2v4M8 2v4M3 10h18"/>
+              </svg>
+
+              {{ 'EXPERIENCE.ITEMS.' + exp.id + '.PERIOD' | translate }}
+            </li>
+
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/>
+                <circle cx="12" cy="10" r="2.5"/>
+              </svg>
+
+              {{ exp.location }}
+            </li>
+          </ul>
+
+          <!-- Statistiques -->
+          <div class="exp-modal-stats">
+
+            <div class="exp-stat">
+              <span class="exp-stat-num">
+                {{ exp.missions.length }}
+              </span>
+
+              <span class="exp-stat-label">
+                {{ 'EXPERIENCE.STAT_MISSIONS' | translate }}
+              </span>
+            </div>
+
+            <div class="exp-stat">
+              <span class="exp-stat-num">
+                {{ exp.techs.length }}
+              </span>
+
+              <span class="exp-stat-label">
+                {{ 'EXPERIENCE.STAT_TECH' | translate }}
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Démonstration, si disponible -->
+          @if (exp.demoUrl) {
+            <a
+              class="exp-demo-btn"
+              [href]="exp.demoUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ 'EXPERIENCE.DEMO' | translate }}
+              <span aria-hidden="true">↗</span>
+            </a>
+          }
+
+        </aside>
+
+        <!-- Contenu détaillé -->
+        <div class="exp-modal-main">
+
+          <!-- Présentation -->
+          <h4 class="exp-modal-heading">
+            {{ 'EXPERIENCE.OVERVIEW' | translate }}
+          </h4>
+
+          <p class="exp-modal-lead">
+            {{ 'EXPERIENCE.ITEMS.' + exp.id + '.SUMMARY' | translate }}
+          </p>
+
+          <!-- Missions -->
+          <h4 class="exp-modal-heading">
+            {{ 'EXPERIENCE.MISSIONS_TITLE' | translate }}
+          </h4>
+
+          <ol class="exp-steps">
+            @for (n of exp.missions; track n) {
+              <li class="exp-step">
+
+                <span class="exp-step-num" aria-hidden="true">
+                  0{{ n }}
+                </span>
+
+                <p class="exp-step-text">
+                  {{ 'EXPERIENCE.ITEMS.' + exp.id + '.MISSION' + n | translate }}
+                </p>
+
+              </li>
+            }
+          </ol>
+
+          <!-- Technologies utilisées -->
+          <h4 class="exp-modal-heading">
+            {{ 'EXPERIENCE.TECH_TITLE' | translate }}
+          </h4>
+
+          <ul class="exp-tech-grid">
+            @for (key of exp.techs; track key) {
+              <li class="exp-tech-card">
+
+                <div class="exp-tech-head">
+                  <span class="exp-tech-symbol" aria-hidden="true">
+                    {{ tech[key].symbol }}
+                  </span>
+
+                  <div>
+                    <p class="exp-tech-name">
+                      {{ tech[key].name }}
+                    </p>
+
+                    <p class="exp-tech-role">
+                      {{ 'EXPERIENCE.TECH.' + key + '.ROLE' | translate }}
+                    </p>
+                  </div>
+                </div>
+
+                <p class="exp-tech-text">
+                  {{ 'EXPERIENCE.TECH.' + key + '.TEXT' | translate }}
+                </p>
+
+              </li>
+            }
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  }
+
+</section>
